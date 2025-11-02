@@ -78,7 +78,11 @@ import numpy as np
 # print(np.split(arr1 , 6))
 
 
-prices=np.array([100 , 200 , 300 , 400])
-discount=10
-final_prices=prices-(prices*discount/100)
-print(final_prices)
+# prices=np.array([100 , 200 , 300 , 400])
+# discount=10
+# final_prices=prices-(prices*discount/100)
+# print(final_prices)
+
+arr=np.array([100 ,np.nan,300 , np.nan])
+mis=np.isnan(arr)
+print(mis)
