@@ -83,6 +83,7 @@ import numpy as np
 # final_prices=prices-(prices*discount/100)
 # print(final_prices)
 
-arr=np.array([100 ,np.nan,300 , np.nan])
+arr=np.array([600 ,np.nan,300 , np.nan])
 mis=np.isnan(arr)
-print(mis)
+cleaned_arr= np.nan_to_num(arr , nan=100)
+print(cleaned_arr)
